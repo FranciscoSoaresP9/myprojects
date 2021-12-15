@@ -1,0 +1,46 @@
+.prime_div{
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid black;
+}
+.table_div, .play_div, .score_div{
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+   
+}
+.cash{
+    display: flex;
+    margin-left: 90%;
+}
+
+.table_div, .play_div{
+    color: blanchedalmond;
+    background: url('https://th.bing.com/th/id/R.79f71860dee4d8a3f0c497a4279c0678?rik=kBd4Cw05mukvSg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f03%2fGreen-Wallpaper-download-free-desktop.jpg&ehk=sfYtW7u%2bwnYjJZuGVMOZBqNibQcMjNI4jfF0CV70A0E%3d&risl=&pid=ImgRaw');
+}
+.table_div div {
+    padding: 10px;
+    border: 1px solid black;
+    flex: 1;
+    
+}
+.table_div div div{
+    height: 270px;
+}
+
+
+.score_table, .score_table tr, .score_table td{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.cardOnTable, .cardImg{
+    margin-left: 0px;
+    height: 130px;
+    width: 95px;  
+}
+

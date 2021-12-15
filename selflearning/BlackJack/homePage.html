@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="css\grafics.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+    <script type="text/javascript" src='jss\runGame.js'></script>
+    <title>Black Jack</title>
+</head>
+<body>
+    
+    <div id='primeDiv' class="prime_div">
+            <h2>Black Jack</h2>
+            <h3><span id='blackJackResult'>Let´s Play</span></h3><span class="cash">Cash: <span id='cash'>100 </span>$</span>
+        <div id='tableDiv' class="table_div">
+            
+            <div id='playerDiv'class="player_div">
+                <h2>You: <span id='playerPoints'>0</span></h2>
+                <div id='playerDivCard' class="player_div_card"></div>
+
+            </div>
+            <div id='dealerDiv' class="dealer_div">
+                <h2>Dealer: <span id='delaerPoints'>0</span></h2>
+                <div id='dealerDivCard' class="dealer_div_card"></div>
+
+            </div>
+        </div>
+        <div id='playDiv' class="play_div">
+            <div id='buttonsDiv' class="buttons_div">
+                <button id='buttonHit' class="btn-lg btn-primary mr2" onclick="hit()">Hit</button>
+                <button id='buttonStand' class="btn-lg btn-warning mr2" onclick="stand()">Stand</button>
+                <button id='buttonDeal' class="btn-lg btn-danger mr2" onclick="deal()">Deal</button> <span>Your Bet</span>
+                <select id='bet'>
+                    <option value=1>1$</option>
+                    <option value=2>2$</option>
+                    <option value=5>5$</option>
+                    <option value=7.5>7.5$</option>
+                    <option value=10>10$</option>
+                    <option value=15>15$</option>
+                    <option value=20>20$</option>
+                    <option value=25>25$</option>
+                    <option value=30>30$</option>
+                    <option value=40>40$</option>
+                    <option value=50>50$</option>
+                    <option value=60>60$</option>
+                    <option value=70>70$</option>
+                    <option value=80>80$</option>
+                    <option value=90>90$</option>
+                    <option value=100>100$</option>
+                    
+                </select>
+            </div>
+        </div>
+        <div id='scoreDiv' class="score_div">
+            <table id='scoreTable' class="score_table">
+                <tr>
+                    <td>Win</td>
+                    <td>Lose</td>
+                    <td>Draw</td>
+                </tr>
+                <tr>
+                    <td><span id='winTd'>0</span></td>
+                    <td><span id='loseTd'>0</span></td>
+                    <td><span id='drawTd'>0</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+</body>
+</html>
