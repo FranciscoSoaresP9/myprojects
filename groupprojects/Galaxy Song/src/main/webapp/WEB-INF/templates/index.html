@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <script modelType="application/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script modelType="application/javascript" async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <script modelType="application/javascript" src="indexJS.js"></script>
+
+</head>
+
+
+<body class="form">
+    <form th:object="${dog}" th:action="@{breedList}" method="POST" id="form">
+
+        <label for="size" ><b>Heigth</b></label>
+        <select id="size" class="select" form="form"  th:field="*{height}" >
+            <option th:value="1" >Small</option>
+            <option th:value="2" >Large</option>
+        </select>
+    <!--    <input type="text" id="size" value="size" th:field="*{heigth}">-->
+
+        <br><br>
+        <label for="energy" ><b>Energy</b></label>
+        <select id="energy" class="select" form="form" th:field="*{energy}" >
+            <option th:value="1" >Calm</option>
+            <option th:value="2">Social</option>
+            <option th:value="3" >Active</option>
+        </select>
+
+
+        <br><br>
+        <label for="purpose" ><b>Purpose</b></label>
+        <select id="purpose" class="select" form="form"  th:field="*{purpose}" >
+            <option th:value="1" >Company</option>
+            <option th:value="2" >Security</option>
+            <option th:value="3" >House Dog</option>
+        </select>
+
+        <br><br>
+        <label for="lifespan" > <b>Lifespan</b></label>
+        <select id="lifespan"  class="select" form="form" th:field="*{lifespan}" >
+            <option th:value="1" >Low</option>
+            <option th:value="2" >High</option>
+        </select>
+
+        <input type="submit" class ="button" value="Get Me A Dog!">
+    </form>
+
+
+</body>
+
+</html>
